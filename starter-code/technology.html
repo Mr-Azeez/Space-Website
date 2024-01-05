@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="technology-page">
+  <nav>
+    <div class="logo-container"><img src="assets/shared/logo.svg" alt="Company's Logo" class="logo"></div>
+    <i class="fa fa-bars" id="ham-menu"></i>
+    <ul class="menu" id="nav-bar">      
+      <li><a href="index.html" class="text-white letter-spacing-3 ff-sans-cond fs-300 uppercase nav-link"><span>00</span> Home</a></li>
+      <li><a href="destination.html" class="text-white letter-spacing-3 ff-sans-cond fs-300 uppercase nav-link"><span>01</span> Destination</a></li>
+      <li><a href="crew.html" class="text-white letter-spacing-3 ff-sans-cond fs-300 uppercase nav-link"><span>02</span> Crew</a></li>
+      <li><a href="technology.html" class="text-white letter-spacing-3 ff-sans-cond fs-300 uppercase nav-link active"><span>03</span> Technology</a></li>
+    </ul>
+  </nav>
+
+  <h1  class="text-white uppercase letter-spacing-3 fs-700"><span class="text-accent">03</span> Space launch 101</h1>
+  <div class="tech-main-content">
+    <ul class="number-buttons text-white">
+      <li class="fs-700 ff-sans-normal active" value="1" id="link" onclick="activeLink()">1</li>
+      <li class="fs-700 ff-sans-normal" value="2" id="link" onclick="activeLink()">2</li>
+      <li class="fs-700 ff-sans-normal" value="3" id="link" onclick="activeLink()">3</li>
+    </ul>
+
+    <!-- Vehicle Info -->
+    <div class="tech-info tab-change active" id="tab1" value="1">
+      <p class="p-header uppercase text-accent">The terminology...</p>
+      <p class="title uppercase fs-800">Launch vehicle</p>
+      <p class="description">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+        payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+        WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+        it's quite an awe-inspiring sight on the launch pad!</p>
+    </div>
+
+    <!-- Spaceport Info -->
+    <div class="tech-info tab-change" id="tab2" value="2">
+      <p class="p-header uppercase text-accent">The terminology...</p>
+      <p class="title uppercase fs-800">Spaceport</p>
+      <p class="description">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+        by analogy to the seaport for ships or airport for aircraft. Based in the 
+        famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+        of the Earth’s rotation for launch.</p>
+    </div>
+
+    <!-- Space capsule Info -->
+    <div class="tech-info tab-change" id="tab3" value="3">
+      <p class="p-header uppercase text-accent">The terminology...</p>
+      <p class="title uppercase fs-800">Space capsule</p>
+      <p class="description">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+        capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+        you'll spend your time during the flight. It includes a space gym, cinema, 
+        and plenty of other activities to keep you entertained.</p>
+    </div>
+
+    <!-- Vehicle -->
+    <div class="tech-image-container image-change active" id="image1" value="1">
+      <picture>
+        <source media="(max-width: 850px)" srcset="assets/technology/image-launch-vehicle-landscape.jpg">
+        <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="Vehicle image">
+      </picture>
+    </div>
+
+    <!-- Spaceport -->
+    <div class="tech-image-container image-change" id="image2" value="2">
+      <picture>
+        <source media="(max-width: 850px)" srcset="assets/technology/image-spaceport-landscape.jpg">
+        <img src="assets/technology/image-spaceport-portrait.jpg" alt="Spaceport image">
+      </picture>
+    </div>
+      
+    <!-- Space Capsule -->
+    <div class="tech-image-container image-change" id="image3" value="3">
+      <picture>
+        <source media="(max-width: 850px)" srcset="assets/technology/image-space-capsule-landscape.jpg">
+        <img src="assets/technology/image-space-capsule-portrait.jpg" alt="Space capsule image">
+      </picture>
+    </div>
+  </div>
+
+  
+  
+
+  
+
+  <!-- Javascript -->
+  <script src="nav.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
